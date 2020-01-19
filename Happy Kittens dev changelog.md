@@ -1,7 +1,7 @@
 
 #######################
 
-## v1.3.4 - 16.01.2020, 17.01.2020, 18.01.2020
+### v1.3.4 - 16.01.2020, 17.01.2020, 18.01.2020
 
 1. Simplified desktop and mobile menu code (there was some repeated code). Now there is just one different div instead of one different and 2 identical.
 
@@ -21,7 +21,7 @@
 
 #######################
 
-## v1.3.3 - 14.01.2020, 15.01.2020, 16.01.2020
+### v1.3.3 - 14.01.2020, 15.01.2020, 16.01.2020
 
 - Code refactoring:
 
@@ -47,19 +47,19 @@
 
 #######################
 
-## v1.3.2 - 30.09.2019
+### v1.3.2 - 30.09.2019
 
 - Added new (shorter) JS code for slides. Now it isn't based on .hidden class and adding display: none to all invisible slides. Now visible slide gets .activeSlide class and animations are added to previous/next element (depends on which element will become visible next).
 
 #######################
 
-## v1.3.1 - 18.09.2019
+### v1.3.1 - 18.09.2019
 
 - Changed animations from absolute left/right to transform: translateX.
 
 #######################
 
-## v1.3.0 - 29.08.2019
+### v1.3.0 - 29.08.2019
 
 - Added sticky menu - on page load nav has position: sticky and top property with minus value. If we scroll page down and then up, eventListener will run function that will add .showNav class to nav. This class is changing top value and we see animation of menu sliding in from top. If we scroll down, .showNav class is removed and menu will be hidden. 
 
@@ -67,7 +67,7 @@
 
 #######################
 
-## v1.2.0 - 27.08.2019
+### v1.2.0 - 27.08.2019
 
 - Added animation to reviews section (JS + CSS). When scrollY gets specific value, entire section slides in from right browser edge. Animation only occurs with min-width: 1060px. Added eventListener for window.resize that removes animation if screen size is smaller than 1060px.
 
@@ -75,7 +75,7 @@
 
 #######################
 
-## v1.1.0 - 22.08.2019, 23.08.2019
+### v1.1.0 - 22.08.2019, 23.08.2019
 
 - One year later I started to add some JS code to this project.
 
@@ -87,7 +87,7 @@
 
 #######################
 
-## v1.0.0 - 20.08.2018
+### v1.0.0 - 20.08.2018
 
 - First version of this project was created using just HTML and CSS. It was based on some website found here:
 https://www.webdesign-inspiration.com/ and without looking into code of this website. That was the test for my skills in that moment.
