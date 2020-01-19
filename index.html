@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Kittens</title>
+
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/slidesAnimations.css" />
+    <link rel="stylesheet" href="./scss/fontello.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navigation">
+        <div class="navigation__left navigation__desktop">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Shop</a>
+        </div>
+
+        <div class="navigation__left navigation__mobile">
+            <div class="menu__icons">
+                <input type="checkbox" id="menu__button">
+                <span class="icon--menu">&#9776;</span>
+                <span class="icon--x">&#10005;</span>
+            </div>
+        </div>
+
+        <div class="logo__container">
+            <picture>
+                <source media="(max-width: 450px)" srcset="./img/logo_mobile_xs.png">
+                <source media="(max-width: 800px)" srcset="./img/logo_mobile.png">
+                <img src="img/logo_desktop.png" alt="logo happy kittens">
+            </picture>
+        </div>
+
+        <div class="navigation__right">
+            <a href="#"><i class="icon-user-circle-o"></i></a>
+            <a href="#"><i class="icon-shopping-basket"></i></a>
+        </div>
+    </div>
+
+        <div class="menu__mobile">
+            <a href="#">
+                <div class="menu__tile">Home</div>
+            </a>
+            <a href="#">
+                <div class="menu__tile">About Us</div>
+            </a>
+            <a href="#">
+                <div class="menu__tile">Shop</div>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="bigPics">
+            <button class="slideChangeBtn slideChangeBtn--left" onclick="previousSlide()">&larr;</button>
+            <button class="slideChangeBtn slideChangeBtn--right" onclick="nextSlide()">&rarr;</button>
+            <img src="img/bigPicSlide1.jpg" alt="big pic slide" class="mainSlides activeSlide">
+            <img src="img/bigPicSlide2.jpg" alt="big pic slide" class="mainSlides">
+            <img src="img/bigPicSlide3.jpg" alt="big pic slide" class="mainSlides">
+            <img src="img/bigPicSlide4.jpg" alt="big pic slide" class="mainSlides">
+            <div class="animation--time"></div>
+        </section>
+
+        <section>
+            <h1>Featured</h1>
+            <div class="featured__container">
+                <a href="#">
+                    <figure>
+                        <div class="featuredOverlay">
+                            <i class="icon-home"></i>
+                            <p>Take him home</p>
+                        </div>
+                        <img src="img/kitty1.jpg" alt="kitty on the tree">
+                        <figcaption>He likes trees!</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure>
+                        <div class="featuredOverlay">
+                            <i class="icon-home"></i>
+                            <p>Take her home</p>
+                        </div>
+                        <img src="img/kitty3.jpg" alt="grey kitty">
+                        <figcaption>She likes to think!</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure>
+                        <div class="featuredOverlay">
+                            <i class="icon-home"></i>
+                            <p>Take him home</p>
+                        </div>
+                        <img src="img/kitty2.jpg" alt="orange kitty on the ground">
+                        <figcaption>He is like a fire!</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure>
+                        <div class="featuredOverlay">
+                            <i class="icon-home"></i>
+                            <p>Take her home</p>
+                        </div>
+                        <img src="img/kitty4.jpg" alt="white kitty">
+                        <figcaption>She loves humans!</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="sectionDivider"></div>
+        </section>
+
+        <section>
+            <h1>Recent Reviews</h1>
+            <div class="reviews__container">
+                <div class="review__tile">
+                    <figure>
+                        <img src="img/kitty5.jpg" alt="black kitty on bed">
+                        <figcaption>10.07.2018</figcaption>
+                    </figure>
+                    <h2>The Best Kitty!</h2>
+                    <p>This Kitty is amazing! Wonderful fur! He likes to play at any time...</p>
+                    <a href="#">Read more</a>
+                </div>
+
+                <div class="review__tile">
+                    <figure>
+                        <img src="img/kitty6.jpg" alt="black and white kitty looking behind the gate">
+                        <figcaption>19.07.2018</figcaption>
+                    </figure>
+                    <h2>Cute Kitty!</h2>
+                    <p>Nice kitty and very funny. She is very curious about everything and...</p>
+                    <a href="#">Read more</a>
+                </div>
+
+                <div class="review__tile">
+                    <figure>
+                        <img src="img/kittens1.jpg" alt="black kitty on bed">
+                        <figcaption>01.08.2018</figcaption>
+                    </figure>
+                    <h2>Many Kittens!</h2>
+                    <p>I didn't want a single kitty. I took five of them. They are very happy...</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="sectionDivider"></div>
+        </section>
+
+        <section>
+            <h1>Recent Commercials</h1>
+            <div class="commercials__container">
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/9xNGaczxMCM" frameborder="0"
+                    allow="encrypted-media" allowfullscreen></iframe>
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/SB-qEYVdvXA?rel=0" frameborder="0"
+                    allow="encrypted-media" allowfullscreen></iframe>
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/OuH9FF3BtZU?rel=0" frameborder="0"
+                    allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="sectionDivider"></div>
+        </section>
+
+        <section class="newsletterSection">
+            <h1>Newsletter</h1>
+            <p>Get exclusive info about new kittens</p>
+            <form>
+                <input type="text" required placeholder="Type your email address" />
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="sectionDivider"></div>
+        </section>
+
+        <section class="usefulLinks">
+            <ul>Support
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of sale</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+
+            <ul>Company
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Cats</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+
+            <ul>Account
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </section>
+
+        <div class="sectionDivider"></div>
+    </main>
+
+    <footer>
+        <div>&copy; 2018-2020 Ruler90</div>
+        <div class="socialIcons">
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-pinterest-circled"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-facebook-official"></i></a>
+        </div>
+    </footer>
+
+    <script src="./scripts/lodash.custom.min.js" type="text/javascript"></script>
+    <script src="./scripts/navigation.js" type="text/javascript"></script>
+    <script src="./scripts/slides.js" type="text/javascript"></script>
+
+</body>
+
+</html>
